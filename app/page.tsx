@@ -11,6 +11,27 @@ type Recipe = {
 
 const recipes: Recipe[] = [
   {
+    id: "puree-maison", title: "Purée de pommes de terre", emoji: "🥔", category: "Accompagnement",
+    time: "40 min", baseServings: 4, servingLabel: "personnes",
+    intro: "Une purée maison simple, douce et onctueuse, avec seulement quelques ingrédients.",
+    ingredients: [
+      { amount: 1, unit: "kg", name: "pommes de terre", note: "à chair farineuse, type Bintje ou Agria" },
+      { amount: 200, unit: "ml", name: "lait" },
+      { amount: 50, unit: "g", name: "beurre" },
+      { amount: null, unit: "", name: "sel", note: "à votre goût" },
+      { amount: null, unit: "", name: "muscade", note: "facultatif" },
+    ],
+    steps: [
+      "Épluchez les pommes de terre, rincez-les et coupez-les en morceaux de taille régulière.",
+      "Placez-les dans une casserole d’eau froide salée. Portez à ébullition, puis faites cuire 20 à 25 minutes, jusqu’à ce qu’un couteau les traverse facilement.",
+      "Pendant ce temps, faites tiédir le lait sans le faire bouillir.",
+      "Égouttez bien les pommes de terre, puis remettez-les 1 minute dans la casserole chaude à feu doux pour retirer l’excès d’eau.",
+      "Écrasez-les au presse-purée ou à la fourchette. Incorporez le beurre, puis ajoutez progressivement le lait chaud jusqu’à obtenir la texture souhaitée.",
+      "Goûtez, rectifiez le sel et ajoutez un peu de muscade si vous le souhaitez. Servez immédiatement.",
+    ],
+    tip: "N’utilisez pas de mixeur : il rendrait la purée collante. Pour une purée plus légère, ajoutez un peu plus de lait chaud.",
+  },
+  {
     id: "gateau-skyr", title: "Gâteau moelleux au skyr", emoji: "🍰", category: "Dessert",
     time: "50 min", baseServings: 8, servingLabel: "personnes",
     intro: "Un gâteau simple, léger et très moelleux, parfait pour utiliser un pot de skyr.",
